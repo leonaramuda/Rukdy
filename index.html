@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUKDY FC</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="/assets/images/favicon.png" type="assets/icon">
+
+    <!--CSS Customs-->
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <!--Javascript Connect-->
+    <script src="/assets/script.js" defer></script>
+
+    <!--CDN LOTTIE-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+</head>
+<body>
+    <!--Header-->
+  <header>
+    <div class="main-container">
+
+      <div class="navi">
+        <div class="company-logo">
+          <img class="company-logo-image"src="/assets/images/favicon.png" alt="logo">
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+
+            <li><a href="">Images</a></li>
+
+            <li><a href="">About</a></li>
+            
+            <li><a href="">How to join ?</a></li>
+          </ul>
+        </nav>
+        
+        <div class="burger-menu">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </div>
+      <!--Hero-->
+      <hero id="Hero" class="hero">
+        <div class="hero-left">
+          <h3 class="pre-title">SOCIALIZE.SPORT.INTEGRITY</h3>
+          <h2 class="hero-name">
+            <span class="title-word title-word-1">R</span>
+            <span class="title-word title-word-2">U</span>
+            <span class="title-word title-word-3">K</span>
+            <span class="title-word title-word-4">D</span>
+            <span class="title-word title-word-5">Y</span>
+          </h2>
+          <p>Greetings football enthusiasts, fans, and supporters! 
+            Nestled in the heart of Serpong, RUKDY FC stands as a beacon of sporting pride and community spirit.
+            Established in 2022, our club has become synonymous with dedication, skill, and the unbridled love for the beautiful game.
+          </p>
+        </div>
+        
+        <div class="hero-right" id="animation container"></div>
+        <script>
+          var animation = bodymovin.loadAnimation({
+            container: document.getElementById('animation container'),
+            path: 'lottie-hero.json',
+            render: 'svg',
+            loop: true,
+            autoplay: true,
+            name:'lapangan bola'
+          });
+          </script>
+        
+        
+      </hero>
+    </div>
+  </header>
+    <!--Carousel-->
+      <section aria-label="Foto Bola">
+        <div class="carousel" data-carousel>
+        <!--Arrow Toptal.com-->
+          <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+
+          <ul data-slides="">
+            <li class="slide" data-active>
+              <img class="carousel-img" src="/assets/images/carousel3.JPG" alt="carousel">
+            </li>
+            <li class="slide">
+              <img class="carousel-img" src="/assets/images/carousel2.jpg" alt="carousel2">
+            </li>
+            <li class="slide">
+              <img class="carousel-img" src="/assets/images/carousel1.jpg" alt="carousel3">
+            </li>
+          </ul>
+        </div>
+      </section>
+<!--Contact Us 1-->
+      <footer>
+        <div class="wrapper">
+          <div class="main-container-about">
+              <div class="about-us">
+                  <h1>Join Us</h1>
+                      <div class="wrapper-about">
+                          <div class="content-about">
+                              <h3>Welcome to RUKDYFC, the ultimate destination for football enthusiasts and passionate players.</h3>
+                              <p>Join the excitement and camaraderie at our football club, where passion meets skill on the field! Whether you're a seasoned player
+                                 looking for a new challenge or a newcomer eager to embrace the beautiful game, our club is the perfect place for you.</p>
+                              <div class="button-about">
+                                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">ContactUs</a>
+                              </div>      
+                          </div>
+                      </div>
+              </div>
+              <!--Contact Us 2-->                  
+                      <div class="contact-box">
+                          <div class="contact-left">
+                              <h3>Sent your request</h3>
+                              <form>
+                                  <div class="input-row">
+                                      <div class="input-group">
+                                          <label>Name</label>
+                                          <input type="text" placeholder="Input your name">
+                                      </div>
+                                      <div class="input-group">
+                                          <label>Phone</label>
+                                          <input type="text" placeholder="+62 1234567">
+                                      </div>
+                                  </div>
+  
+                                  <div class="input-row">
+                                      <div class="input-group">
+                                          <label>Email</label>
+                                          <input type="email" placeholder="rukdyfc@gmail.com">
+                                      </div>
+                                      <div class="input-group">
+                                          <label>Position</label>
+                                          <input type="text" placeholder="Your preferred position">
+                                      </div>
+                                  </div>
+  
+                                  <label>Message</label>
+                                  <textarea rows="3" placeholder="Your Message"></textarea>
+                                  <button type="submit" class="submit-button" onclick="submitContactMsg()">Submit</button>
+                              </form>
+                          </div>
+  
+                          <div class="contact-right">
+                              <h3>Reach Us</h3>
+  
+                              <table>
+                                  <tr>
+                                      <td>Email</td>
+                                      <td>rukdyfc@gmail.com</td>
+                                  </tr>
+  
+                                  <tr>
+                                      <td>Phone</td>
+                                      <td>+62 123 456 7890</td>
+                                  </tr>
+  
+                                  <tr>
+                                      <td>Address</td>
+                                      <td>Jl. Kemanggisan Ilir III No.45, Kemanggisan,
+                                      <br> Kec. Palmerah, Kota Jakarta Barat, 
+                                      <br> Khusus Ibukota Jakarta 11480</td>
+                                  </tr>
+                              </table>
+                          </div>
+                      </div>
+              </div>       
+          </div>
+      </footer>
+</body>
+</html>
